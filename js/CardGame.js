@@ -119,7 +119,7 @@ class CardGame extends React.Component {
     }
 
     if (abortGeneration) {
-      this.setState({error: 'Please ensure your cards are valid and separate by spaces.'});
+      this.setState({error: 'Please ensure your cards are valid and separated by spaces.'});
       
       return;
     }
