@@ -50,14 +50,14 @@ class CardGame extends React.Component {
       <div>
         <h3>Card Game</h3>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="user-name>">Name: </label>
+          <label htmlFor="user-name">Name: </label>
           <input id="user-name" class="form-input" onChange={this.updateUserName} type="text"></input>
           
           <p>Valid cards include: 2 3 4 5 6 7 8 9 10 J Q K A</p>
           <label htmlFor="user-cards">Type your cards separated by spaces, then click "Play": </label><br />
           <input id="user-cards" class="form-input" onChange={this.updateUserCards} value={this.state.userCards} type="text"></input>
           
-          <button>Play</button>
+          <button id="play-button">PLAY</button>
         </form>
 
         <p>Generated Hand: <span>{this.state.cpuCards}</span></p>
@@ -119,7 +119,7 @@ class CardGame extends React.Component {
     }
 
     if (abortGeneration) {
-      this.setState({error: 'Please ensure your cards are valid and separated by spaces.'});
+      this.setState({ error: 'Please ensure your cards are valid and separated by spaces.' });
       
       return;
     }

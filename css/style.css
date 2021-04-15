@@ -1,6 +1,13 @@
 body {
-    background-color: darkslategray;
+    background-color:antiquewhite;
     color: antiquewhite;
+}
+
+.container {
+    padding: 20px 0 20px 30px;
+    background-color:darkslategray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #999;
 }
 
 #body-wrapper {
@@ -9,10 +16,36 @@ body {
 
 .form-input {
     margin: 10px 10px 10px 0px;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(41, 41, 41);
 }
 
 #user-name {
     margin-left: 10px;
+}
+
+#play-button {
+    display: inline-block;
+    background-color: #b4b4b4;
+    border-radius: 10px;
+    border: 4px double #dfdfdf;
+    color: #000000;
+    text-align: center;
+    font-size: 14px;
+    /* padding: 2px; */
+    width: 125px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 5px; */
+}
+
+#play-button:hover {
+    background-color: antiquewhite;
+    color: darkslategray;
 }
 
 #error-message {
