@@ -1,11 +1,11 @@
 body {
-    background-color:antiquewhite;
-    color: antiquewhite;
+    background-color:rgb(255, 255, 255);
+    color: white;
 }
 
 .container {
     padding: 20px 0 20px 30px;
-    background-color:darkslategray;
+    background-color:rgba(0, 211, 211, 0.856);
     border-radius: 10px;
     box-shadow: 5px 5px 5px #999;
 }
@@ -18,7 +18,7 @@ body {
     margin: 10px 10px 10px 0px;
     border: 1px solid rgb(41, 41, 41);
     border-radius: 5px;
-    box-shadow: 2px 2px 2px rgb(41, 41, 41);
+    box-shadow: 1px 1px 1px rgb(41, 41, 41);
 }
 
 #user-name {
@@ -27,10 +27,10 @@ body {
 
 #play-button {
     display: inline-block;
-    background-color: #b4b4b4;
+    background-color: rgb(74, 122, 228);
     border-radius: 10px;
     border: 4px double #dfdfdf;
-    color: #000000;
+    color: white;
     text-align: center;
     font-size: 14px;
     /* padding: 2px; */
