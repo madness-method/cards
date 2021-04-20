@@ -12,7 +12,7 @@ class CardGame extends React.Component {
       cpuScore:  0,
       userWin:   0,
       summary:   '',
-      error:     ' ',
+      error:     '',
     };
     this.apiBaseUrl      = 'http://localhost:9000/game';
     this.updateUserName  = this.updateUserName.bind(this);
@@ -51,11 +51,11 @@ class CardGame extends React.Component {
         <h3>Card Game</h3>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="user-name">Name: </label>
-          <input id="user-name" class="form-input" onChange={this.updateUserName} type="text"></input>
+          <input id="user-name" className="form-input" onChange={this.updateUserName} type="text"></input>
           
           <p>Valid cards include: 2 3 4 5 6 7 8 9 10 J Q K A</p>
           <label htmlFor="user-cards">Type your cards separated by spaces, then click "Play": </label><br />
-          <input id="user-cards" class="form-input" onChange={this.updateUserCards} value={this.state.userCards} type="text"></input>
+          <input id="user-cards" className="form-input" onChange={this.updateUserCards} value={this.state.userCards} type="text"></input>
           
           <button id="play-button">PLAY</button>
         </form>
